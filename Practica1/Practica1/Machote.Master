@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Machote.master.cs" Inherits="Practica1.Practica1.Machote" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Restaurante El Buen Sabor</title>
+    <link href="Styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">BriefCase</a></h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li><a href="#" accesskey="2" title="">My Designs</a></li>
+			<li><a href="#" accesskey="3" title="">About Me</a></li>
+			<li><a href="#" accesskey="4" title="">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div id="banner" class="container">
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide"> <a class="link" href="http://nodethirtythree.com/#slidertron-slide-1">Full story ...</a> <img src="images/pic01.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="http://nodethirtythree.com/#slidertron-slide-2">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="http://nodethirtythree.com/#slidertron-slide-1">Full story ...</a> <img src="images/pic04.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="http://nodethirtythree.com/#slidertron-slide-2">Full story ...</a> <img src="images/pic05.jpg" alt="" /> </div>
+			</div>
+		</div>
+		<div class="indicator">
+			<ul>
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    $('#slider').slidertron({
+	        viewerSelector: '.viewer',
+	        reelSelector: '.viewer .reel',
+	        slidesSelector: '.viewer .reel .slide',
+	        advanceDelay: 3000,
+	        speed: 'slow',
+	        navPreviousSelector: '.previous-button',
+	        navNextSelector: '.next-button',
+	        indicatorSelector: '.indicator ul li',
+	        slideLinkSelector: '.link'
+	    });
+	</script> 
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div id="onecolumn">
+			<h2>Bienvenido a El Buen Sabor</h2>
+			<p>En este Sitio se promueve que nuestros comensales compartan sus recetas favoritas para que todos tengamos acceso a deliciosas recetas. Para mantener un orden en las recetas, solo se permite a usuarios registrados ingresar recetas, pero si solo las quieres visualizar no es necesario que te registres.</p>
+		</div>
+		<div id="two-column">
+			<div class="box-content">
+				<h2 class="title title01">Nulla luctus eleifend</h2>
+				<p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque quis.</p>
+			</div>
+			<div class="box-content">
+				<h2 class="title title02">Maecenas luctus lectus</h2>
+				<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet. In posuere  odio quisque semper augue mattis maecenas ligula.</p>
+			</div>
+		</div>
+	</div>
+	<div id="sidebar">
+		<div id="sbox1">
+			<h2>Logeate Aca</h2>
+			<ul class="list-style1">
+				<li class="first">
+                    <p> <label for="username">username</label> </p>
+                    <p><input type="text" name="username" value="" id="username" /></p>
+                    <p> <label for="password">password</label> </p>
+                    <p> <input type="password" name="password" value="" id="password" /></p>
+                    <p>
+                        <asp:Button ID="logeoBt" runat="server" Text="Logeate Aca" OnClick="logeoBt_Click" />
+                    </p>
+					<p><a href="Creacion.aspx" class="link-style">Crear Usuario<li>
+					<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus  at sem. </p>
+					<p><a href="#" class="link-style">Read More</a></p>
+				</li>
+			</ul>
+		</div>
+		<div id="sbox2">
+			<h2>Testimonials</h2>
+			<p class="testimonial">Pellentesque adipiscing purus ac magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+			<div class="author"><img src="images/pic03.jpg" width="80" height="80" alt="" /><span class="name">Juan Dela Cruz</span><span class="position">Company CEO</span><span>MyCompany, LLC</span></div>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container">
+	<div id="fbox1">
+		<h2>Aenean elementum</h2>
+		<ul class="style1">
+			<li class="first"><a href="#">Consectetuer adipiscing elit</a></li>
+			<li><a href="#">Metus aliquam pellentesque</a></li>
+			<li><a href="#">Suspendisse iaculis mauris</a></li>
+			<li><a href="#">Urnanet non molestie semper</a></li>
+			<li><a href="#">Proin gravida orci porttitor</a></li>
+		</ul>
+	</div>
+	<div id="fbox2">
+		<h2>Vestibulum luctus</h2>
+		<ul class="style1">
+			<li class="first"><a href="#">Consectetuer adipiscing elit</a></li>
+			<li><a href="#">Metus aliquam pellentesque</a></li>
+			<li><a href="#">Suspendisse iaculis mauris</a></li>
+			<li><a href="#">Urnanet non molestie semper</a></li>
+			<li><a href="#">Proin gravida orci porttitor</a></li>
+		</ul>
+	</div>
+	<div id="fbox3">
+		<h2>Etiam malesuada</h2>
+		<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Donec leo. Vivamus fermentum nibh in augue.</p>
+		<ul class="style2">
+			<li><a href="#"><img src="images/social03.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social01.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social04.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social02.png" width="32" height="32" alt="" /></a></li>
+		</ul>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
+    </form>
+</body>
+    
+</html>
