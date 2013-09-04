@@ -70,28 +70,39 @@
 				<p>Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit. Nullam ante orci, pellentesque quis.</p>
 			</div>
 			<div class="box-content">
-				<h2 class="title title02">Maecenas luctus lectus</h2>
+				<h2 class="title title02">Maecenas luctus lectus
+                </h2>
 				<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo. Pellentesque imperdiet. In posuere  odio quisque semper augue mattis maecenas ligula.</p>
 			</div>
 		</div>
 	</div>
 	<div id="sidebar">
 		<div id="sbox1">
-			<h2>Logeate Aca</h2>
+            <div>
 			<ul class="list-style1">
+                <li class="first">
+                <asp:Label ID="login" runat="server" style="z-index: 1; left: auto; top: auto; position: absolute; height: 33px; margin-bottom: 0px;">Logueate acá</asp:Label>    
+                </li>
+                <li class="first">
+                        <asp:Label ID="usuarioLb" runat="server" style="z-index: 1; left: auto; top: auto; position: absolute"  Text="Usuario"></asp:Label>
+                </li>
 				<li class="first">
-                    <p> <label for="username">username</label> </p>
-                    <p><input type="text" name="username" value="" id="username" /></p>
-                    <p> <label for="password">password</label> </p>
-                    <p> <input type="password" name="password" value="" id="password" /></p>
-                    <p>
+                    <p><asp:TextBox ID = "userName" runat="server"> </asp:TextBox></p>
+                </li>
+                <li class="first">
+                    <asp:Label ID="passLb" runat="server" style="z-index: 1; left: auto; top: auto; position: absolute" Text="Password">
+                    </asp:Label> 
+                </li>
+                <li class="first">
+                    <asp:TextBox ID= "pass" TextMode="Password" runat="server" style="margin-top: 0px"></asp:TextBox>
+                </li>
+                <li class="first">
                         <asp:Button ID="logeoBt" runat="server" Text="Logeate Aca" OnClick="logeoBt_Click" />
-                    </p>
-					<p><a href="Creacion.aspx" class="link-style">Crear Usuario<li>
-					<p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus  at sem. </p>
-					<p><a href="#" class="link-style">Read More</a></p>
-				</li>
-			</ul>
+                </li>
+                <li class="first">
+					<a href="Creacion.aspx" class="link-style">Crear Usuario</a>
+                </li>    
+          </ul>
 		</div>
 		<div id="sbox2">
 			<h2>Testimonials</h2>
@@ -131,6 +142,7 @@
 			<li><a href="#"><img src="images/social02.png" width="32" height="32" alt="" /></a></li>
 		</ul>
 	</div>
+    </div>
 </div>
 <div id="copyright" class="container">
 	<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>

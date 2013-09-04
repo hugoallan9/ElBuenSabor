@@ -28,7 +28,6 @@ namespace Practica1.Practica1
             {
                 TextBox1.Text = " me he conectado";
             }
-            int id = 1;
             string datos = "insert into Usuario(nombrePila,apellido,nacionalidad,nombreUsuario,contrasenia)values(\'" + nombre.Text +"\',\'"+ apellido.Text+"\', \'" + nacionalidad.Text+"\',\'"+ nick.Text+"\', PWDENCRYPT(\'"+pass.Text +"\')  )" ;
             TextBox1.Text = dab.insertarDatos(datos);  
  

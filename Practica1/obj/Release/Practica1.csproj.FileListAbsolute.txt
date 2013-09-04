@@ -1,0 +1,4 @@
+D:\Dropbox\Sistemas\2Semestre2013\IPC2\Practicas\Practica1\Practica1\Practica1\bin\Practica1.dll
+D:\Dropbox\Sistemas\2Semestre2013\IPC2\Practicas\Practica1\Practica1\Practica1\bin\Practica1.pdb
+D:\Dropbox\Sistemas\2Semestre2013\IPC2\Practicas\Practica1\Practica1\Practica1\obj\Release\Practica1.dll
+D:\Dropbox\Sistemas\2Semestre2013\IPC2\Practicas\Practica1\Practica1\Practica1\obj\Release\Practica1.pdb

@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Practica1\Defualt.aspx" />
+    <Content Include="Practica1\Global.asax" />
     <Content Include="Practica1\Images\banner-bg.png" />
     <Content Include="Practica1\Images\gradient-bg.png" />
     <Content Include="Practica1\Images\icon01.png" />
@@ -73,6 +74,8 @@
     <Content Include="Practica1\Images\social03.png" />
     <Content Include="Practica1\Images\social04.png" />
     <Content Include="Practica1\Login.aspx" />
+    <Content Include="Practica1\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Practica1\Scripts\jquery.slidertron-1.1.js" />
     <Content Include="Practica1\Styles\Default.css" />
     <Content Include="Practica1\Creacion.aspx" />
     <Content Include="Web.config" />
@@ -85,6 +88,9 @@
     </Compile>
     <Compile Include="Practica1\Defualt.aspx.designer.cs">
       <DependentUpon>Defualt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Practica1\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Practica1\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -121,7 +127,6 @@
   <ItemGroup>
     <Folder Include="Practica1\Account\" />
     <Folder Include="Practica1\AppData\" />
-    <Folder Include="Practica1\Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
